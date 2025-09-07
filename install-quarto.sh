@@ -3,9 +3,8 @@ set -e
 
 CACHE_DIR="${QUARTO_CACHE_DIR:-/opt/build/cache/quarto}"
 QUARTO_DIR="${CACHE_DIR}/quarto-${QUARTO_VERSION}"
-QUARTO_BIN="${QUARTO_DIR}/usr/bin/quarto"
 
-if [ -x "$QUARTO_BIN" ]; then
+if [ -x "${QUARTO_DIR}/opt/quarto/bin/quarto" ]; then
   echo "✅ Using cached Quarto $QUARTO_VERSION"
 else
   echo "🔽 Installing Quarto $QUARTO_VERSION ..."
@@ -25,10 +24,10 @@ else
   fi
 fi
 
-# ✅ Make sure Quarto is on PATH
-export PATH="${QUARTO_DIR}/usr/bin:$PATH"
+# ✅ Quarto lives under opt/quarto/bin
+export PATH="${QUARTO_DIR}/opt/quarto/bin:$PATH"
 
 echo "✅ Quarto version: $(quarto --version)"
 
-# Run the actual build here, so PATH stays valid
+# Run the actual site build
 quarto render
