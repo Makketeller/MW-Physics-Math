@@ -1,6 +1,7 @@
 # Netlify configuration file
 
 [build]
+image = "ubuntu-jammy-22.04"
 command = "quarto render"
 publish = "_site"
 
