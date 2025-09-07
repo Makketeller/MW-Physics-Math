@@ -2,4 +2,10 @@
 title: "About"
 ---
 
-About this site
+Who you are: "I am a physics student at [Your University] with a passion for quantum mechanics and computational physics."
+
+The purpose of the site: "This website serves as my professional portfolio and a public notebook. 
+It's a place for me to document my work and share detailed solutions to challenging problems in physics and mathematics."
+
+What content to expect: "Here you will find solutions from textbooks like Griffiths' Introduction to Quantum Mechanics,
+ as well as interactive simulations exploring these topics."

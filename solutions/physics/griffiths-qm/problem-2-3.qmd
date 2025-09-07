@@ -1,0 +1,64 @@
+---
+title: "Griffiths QM - Problem 2.3: No Solutions for E ≤ 0"
+author: "Markus Wallin"
+date: "2025-09-07"
+categories: [Physics, Quantum Mechanics, Griffiths]
+description: "A proof showing no acceptable solutions exist for the infinite square well with non-positive energy."
+---
+
+This problem asks us to show that there are no acceptable solutions to the time-independent Schrödinger equation for the infinite square well when the energy $E$ is zero or negative.
+
+### Case 1: E = 0
+
+The time-independent Schrödinger equation is:
+
+$$
+-\frac{\hbar^2}{2m}\frac{d^2\psi}{dx^2} + V(x)\psi = E\psi
+$$
+
+Inside the well, $V(x) = 0$, and with $E = 0$, the equation simplifies to:
+
+$$
+\frac{d^2\psi}{dx^2} = 0
+$$
+
+The general solution to this is a linear function:
+
+$$
+\psi(x) = Ax + B
+$$
+
+Now we must apply the boundary conditions for the infinite square well, which are $\psi(0) = 0$ and $\psi(L) = 0$.
+
+1.  Applying the first condition, $\psi(0) = 0$:
+    $A(0) + B = 0 \implies B = 0$.
+
+2.  With $B=0$, our solution is $\psi(x) = Ax$. Applying the second condition, $\psi(L) = 0$:
+    $A(L) = 0 \implies A = 0$.
+
+Since both $A$ and $B$ must be zero, the only solution is $\psi(x) = 0$. This is the trivial solution and is not physically acceptable (it means there is no particle), so there are no solutions for $E=0$.
+
+### Case 2: E < 0
+
+For $E < 0$, the Schrödinger equation inside the well is:
+
+$$
+\frac{d^2\psi}{dx^2} = \frac{2mE}{\hbar^2}\psi
+$$
+
+Since $E$ is negative, the term $\frac{2mE}{\hbar^2}$ is also negative. Let's define a positive constant $\kappa^2 = -\frac{2mE}{\hbar^2}$. The equation becomes:
+
+$$
+\frac{d^2\psi}{dx^2} = -\kappa^2\psi
+$$
+
+Oops, wait. That's not right. The right side is positive. Let's define the positive constant $\kappa^2 = \frac{2m|E|}{\hbar^2}$. The equation is actually:
+
+$$
+\frac{d^2\psi}{dx^2} = \kappa^2\psi
+$$
+
+The general solution to this equation involves real exponentials, not sines and cosines...
+
+---
+

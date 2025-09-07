@@ -1,7 +1,7 @@
 ---
-title: "MW-PhysicsAndMath"
+title: "MW Physics & Math"
+description: "A portfolio of solutions and simulations in quantum mechanics and mathematics by Markus Wallin, a physics student."
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Welcome to my personal portfolio.
+ This site is a collection of my work, including detailed solutions to university-level physics and math problems...
