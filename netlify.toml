@@ -1,0 +1,11 @@
+# Netlify configuration file
+
+[build]
+command = "quarto render"
+publish = "_site"
+
+[context.production.environment]
+QUARTO_VERSION = "1.4.553"
+
+[context.deploy-preview.environment]
+QUARTO_VERSION = "1.4.553"
