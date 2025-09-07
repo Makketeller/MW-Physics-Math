@@ -1,12 +1,16 @@
 # Netlify configuration file
 
 [build]
-image = "ubuntu-jammy-22.04"
-command = "quarto render"
-publish = "_site"
+  image = "ubuntu-jammy-22.04"
+  command = "bash install-quarto.sh && quarto render"
+  publish = "_site"
+
+# Save Quarto in Netlify’s cache between builds
+[build.environment]
+  QUARTO_CACHE_DIR = "/opt/build/cache/quarto"
 
 [context.production.environment]
-QUARTO_VERSION = "1.4.553"
+  QUARTO_VERSION = "1.4.553"
 
 [context.deploy-preview.environment]
-QUARTO_VERSION = "1.4.553"
+  QUARTO_VERSION = "1.4.553"
