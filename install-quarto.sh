@@ -29,3 +29,6 @@ fi
 export PATH="${QUARTO_DIR}/usr/bin:$PATH"
 
 echo "✅ Quarto version: $(quarto --version)"
+
+# Run the actual build here, so PATH stays valid
+quarto render
