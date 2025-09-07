@@ -9,8 +9,6 @@ website:
         text: Home
       - href: solutions.qmd
         text: Solutions
-      - href: simulations.qmd 
-        text: Simulations
       - href: about.qmd
         text: About
 
